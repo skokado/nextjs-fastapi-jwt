@@ -49,7 +49,9 @@ const App = () => {
   return <div>
     <form onSubmit={handleSubmit}>
       <input type="text" name="username" onChange={handleOnChange} placeholder="ユーザー名" />
+      <br />
       <input type="password" name="password" onChange={handleOnChange} placeholder="パスワード" />
+      <br />
       <button type="submit">ログイン</button>
     </form>
     { message ? <p>{message}</p> : "" }
